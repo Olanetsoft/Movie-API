@@ -19,7 +19,7 @@ namespace MovieAPI.Services
             using (var csv = new CsvReader(reader))
             {
                 csv.Configuration.RegisterClassMap<MovieMap>();
-                var records = csv.GetRecords<Models.Movie>().ToList();
+                var records = csv.GetRecords<Models.Movie>().OrderByDescending(mw => mw.watchDurationMs).ToList();
                 return records;
 
             }

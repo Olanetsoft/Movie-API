@@ -1,5 +1,4 @@
 ﻿using CsvHelper;
-using MovieAPI.Dtos;
 using MovieAPI.Mappers;
 using Newtonsoft.Json;
 using System;
@@ -34,21 +33,6 @@ namespace MovieAPI.Services
             {
                 csv.Configuration.RegisterClassMap<MetadataMap>();
                 var records = csv.GetRecords<Models.Metadata>().Where(m => m.movieId == movieId).ToList();
-
-
-                //// using Metadata dto to return only the needed value
-                //var metadataDto = new List<MetadataDto>();
-                //foreach (var metadata in records)
-                //{
-                //    metadataDto.Add(new MetadataDto
-                //    {
-                //        movieId = metadata.movieId,
-                //        title = metadata.title,
-                //        language = metadata.language,
-                //        duration = metadata.duration,
-                //        releaseYear = metadata.releaseYear
-                //    });
-                //}
 
                 return records;
 
