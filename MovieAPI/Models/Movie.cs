@@ -9,6 +9,7 @@ namespace MovieAPI.Models
     {
         public int movieId { get; set; }
         public int watchDurationMs { get; set; }
+        public int averageWatchDurationS { get; set; }
 
     }
 }
