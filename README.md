@@ -15,8 +15,8 @@
 
 #### Step 1: Start IIS express from Visual Studio after Opening the project
 
- #### Step 2: access http://localhost:<YourPort>/metadata/:movieId - GET request for a movie metadata
+ #### Step 2: access http://localhost:YourPort/metadata/:movieId - GET request for a movie metadata
 
- #### Step 3: access http://localhost:<YourPort>/metadata - POST request to create a movie
+ #### Step 3: access http://localhost:YourPort/metadata - POST request to create a movie
 
- #### Step 4: access http://localhost:<YourPort>/movies/stats - Get movies stats
+ #### Step 4: access http://localhost:YourPort/movies/stats - Get movies stats
