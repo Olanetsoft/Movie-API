@@ -13,7 +13,7 @@ namespace MovieAPI.Services
     {
 
         // Get Movie Stats
-        public List<Models.Movie> GetMovies(string location)
+        public List<Models.Movie> GetMoviesStats(string location)
         {
             using (var reader = new StreamReader(location, Encoding.Default))
             using (var csv = new CsvReader(reader))

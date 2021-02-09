@@ -16,6 +16,7 @@ namespace MovieAPI.Controllers
 
         private Movies _movieService;
 
+
         // Constructor
         public MoviesController(Movies movieService)
         {
@@ -23,17 +24,17 @@ namespace MovieAPI.Controllers
         }
 
 
-        // GET Movie Stat
-        // api/movie/stat
+        // GET Movies Stat
+        // api/movies/stat
         [HttpGet]
         public IActionResult GetMovieStat()
         {
             var path = @"./Data/stats.csv";
 
-            // get metadata
-            var metadata = _movieService.GetMovies(path);
+            // get movies stats
+            var movie = _movieService.GetMoviesStats(path);
 
-            return Ok(metadata);
+            return Ok(movie);
         }
     }
 }

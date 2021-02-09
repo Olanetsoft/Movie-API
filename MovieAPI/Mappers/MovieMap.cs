@@ -1,5 +1,6 @@
 ﻿using CsvHelper.Configuration;
 using MovieAPI.Models;
+using MovieAPI.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,8 @@ namespace MovieAPI.Mappers
     {
         public MovieMap()
         {
-            Map(x => x.movieId).Name("movieId");
-            Map(x => x.watchDurationMs).Name("watchDurationMs");
+            Map(x => x.movieId).Name(GlobalStrings.Movie.movieId);
+            Map(x => x.watchDurationMs).Name(GlobalStrings.Movie.watchDurationMs);
         }
     }
 

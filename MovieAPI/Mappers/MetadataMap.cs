@@ -1,5 +1,6 @@
 ﻿using CsvHelper.Configuration;
 using MovieAPI.Models;
+using MovieAPI.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +13,11 @@ namespace MovieAPI.Mappers
     {
         public MetadataMap()
         {
-            Map(x => x.movieId).Name("MovieId");
-            Map(x => x.title).Name("Title");
-            Map(x => x.language).Name("Language");
-            Map(x => x.duration).Name("Duration");
-            Map(x => x.releaseYear).Name("ReleaseYear");
+            Map(x => x.movieId).Name(GlobalStrings.Metadata.MovieId);
+            Map(x => x.title).Name(GlobalStrings.Metadata.Title);
+            Map(x => x.language).Name(GlobalStrings.Metadata.Language);
+            Map(x => x.duration).Name(GlobalStrings.Metadata.Duration);
+            Map(x => x.releaseYear).Name(GlobalStrings.Metadata.ReleaseYear);
         }
     }
 }
