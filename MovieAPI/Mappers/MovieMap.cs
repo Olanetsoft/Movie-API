@@ -12,8 +12,8 @@ namespace MovieAPI.Mappers
     {
         public MovieMap()
         {
-            Map(x => x.movieId).Name(GlobalStrings.Movie.movieId);
-            Map(x => x.watchDurationMs).Name(GlobalStrings.Movie.watchDurationMs);
+            Map(x => x.movieId).Name(GlobalStrings.Movie.MovieId);
+            Map(x => x.watchDurationMs).Name(GlobalStrings.Movie.WatchDurationMs);
         }
     }
 

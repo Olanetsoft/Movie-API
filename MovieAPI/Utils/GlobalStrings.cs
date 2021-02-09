@@ -9,8 +9,8 @@ namespace MovieAPI.Utils
     {
         public static class Movie
         {
-            public static readonly string movieId = "movieId";
-            public static readonly string watchDurationMs = "watchDurationMs";
+            public static readonly string MovieId = "movieId";
+            public static readonly string WatchDurationMs = "watchDurationMs";
         }
 
         public static class Metadata
